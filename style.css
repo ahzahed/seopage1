@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #166bba;
+  border-radius: 10px;
+}
+
+.container-fluid {
+  width: 470%;
+}
+@media (max-width: 1440px) {
+  /* Large devices (desktops, 992px and up) */
+  .container-fluid {
+    width: 650%;
+  }
+}
+@media (max-width: 1024px) {
+  /* Large devices (desktops, 992px and up) */
+  .container-fluid {
+    width: 850%;
+  }
+}
+@media (max-width: 768px) {
+  /* Medium devices (tablets, 768px and up) */
+  .container-fluid {
+    width: 1200%;
+  }
+}
+@media (max-width: 425px) {
+  /* Medium devices (tablets, 768px and up) */
+  .container-fluid {
+    width: 2000%;
+  }
+}
+@media (max-width: 320px) {
+  /* Medium devices (tablets, 768px and up) */
+  .container-fluid {
+    width: 2700%;
+  }
+}
+.column {
+  height: 300px;
+  background-color: #f2f4f7;
+  display: inline-block;
+  width: calc(100% / 25);
+  height: 100vh;
+  overflow: scroll;
+  margin-right: 10px;
+  padding: 5px;
+  overflow-x: hidden;
+}
+.column:last-child {
+  margin-right: 0;
+}
+/* width */
+.column::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.column::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.column::-webkit-scrollbar-thumb {
+  background: #166bba;
+  border-radius: 10px;
+}
+
+img {
+  width: 27px;
+  height: 27px;
+}
+
+.description {
+  font-size: 13px;
+}
+.card {
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.status {
+  border-left: 20px solid;
+  border-color: #d21010;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding-left: 5px;
+  color: #6e6383;
+}
+.statusCount {
+  background-color: #e8eef3;
+  text-align: center;
+  border-radius: 5px;
+  color: #69657e;
+}
